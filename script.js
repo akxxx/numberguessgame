@@ -99,3 +99,14 @@ function compareGuess() {
     
     
 }
+
+bubbly({
+    blur:80,
+    colorStart: '#9999FF',
+    colorStop: '#B1F9D0',
+    radiusFunc:() => 5 + Math.random() * 70,
+    angleFunc:() => -Math.PI / 2,
+    velocityFunc:() => Math.random() * 10.5,
+    bubbleFunc:() => `hsla(${800 + Math.random() * 90}, 100%, 65%, .1)`,
+    bubbles:350
+  });
